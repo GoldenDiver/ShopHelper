@@ -1,51 +1,111 @@
-.tg {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: yellow;
+.sidenav {
+    background-color: #111;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
 }
 
-td {
-    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    overflow:hidden;padding:10px 5px;word-break:normal;
+.sidenav li {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    cursor: pointer;
 }
 
-th { 
-    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
+.sidenav li:hover {
+    color: #f1f1f1;
 }
 
-.tg-0lax {
-    text-align:center;vertical-align:top
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 25px;
 }
 
-body {
-    margin: 0;
-    background-color: rgb(124, 115, 207, 0.6);
+.money {
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 10px;
+    transition-duration: 0.2s;
+    margin: 20px;
 }
 
-body * {
-    box-sizing: border-box;
+.inptable {
+    font-size: 25px;
+    width: 40%;
+    border-radius: 15px;
+    padding-left: 10px;
 }
 
-/* .board {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(124, 115, 207);
-} */
+.vol {
+    width: 20%;
+}
 
-.btn {
-    position: absolute;
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+table{
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 5px groove #ccc; /* Рамка вокруг таблицы */
+}
+
+.inject{
+    margin-top: 0px;
+}
+
+.coin-parent{
+    vertical-align: top;
+}
+
+th{
+    background: #4b0082; /* Цвет фона */
+    color: #fffff0; /* Цвет текста */
+}
+
+td, th {
+    padding: 2px; /* Поля вокруг содержимого ячеек */
+    border: 3px groove #ccc /* Граница между ячейками */
+   }
+
+.clean {
+    margin-top: 25px;
+    position: relative;
     left: 50%;
-    top: 50%;
-    transition: 0.09s;
+    font-size: 25px;
+    
+    padding: 10px;
+    transition-duration: 0.2s;
+    border-radius: 15px;
+}
 
-    width: 100px;
-    height: 50px;
+.delete {
+    text-decoration: none;
     font-size: 15px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: rgb(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 15px;
+    padding: 5px;
+    transition-duration: 0.2s;
 }
