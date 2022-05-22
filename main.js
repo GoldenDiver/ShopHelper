@@ -13,7 +13,7 @@
         <div class="body">
             <div class="bodycontent">
                 <label>Номінал:</label>
-                <select class="money cupure vol">
+                <select class="money cupure">
                     <optgroup label="Купюри">
                         <option value="1000">1000</option>
                         <option value="500">500</option>
