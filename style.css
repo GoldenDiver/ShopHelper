@@ -45,7 +45,7 @@ body{
 
 .inptable {
     font-size: 25px;
-    width: 60%;
+    width: 40%;
     border-radius: 15px;
     padding-left: 10px;
 }
@@ -72,7 +72,7 @@ button:active {
 }
 
 .cupure, .vol{
-    width: 20%
+    width: 30%
 }
 
 
