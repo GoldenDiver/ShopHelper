@@ -43,24 +43,25 @@
             <div class="bodycontent">
                 <button class="money add">Додати</button>
             </div>
-        
-            <table class="body">
-                <thead>
-                    <tr>
-                        <th>Номінал</th>
-                        <th>Кількість</th>
-                        <th colspan="2">Сума</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="2">Результат</th>
-                        <th id="res" colspan="2"></th>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="bodycontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Номінал</th>
+                            <th>Кількість</th>
+                            <th colspan="2">Сума</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Результат</th>
+                            <th id="res" colspan="2"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>   
             <div class="bodycontent">
                 <button class="clean money">Зтерти</button>
             </div>
@@ -140,66 +141,70 @@
     const oldCalc = document.querySelector('#old')
     oldCalc.onclick = function(){
         main.innerHTML = `
-        <table>
-            <thead>
-                <tr>
-                    <th>Купюри</th>
-                    <th>Монети</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>    
-                    <td>
-                        <table class="inject">
-                            <thead>
-                                <tr>
-                                    <th width="120px">Номінал</th>
-                                    <th>Кількість</th>
-                                    <th>Сума</th>
-                                </tr>
-                            </thead>
-                            <tbody class="cupure">
+        <div class="body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Купюри</th>
+                        <th>Монети</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>    
+                        <td>
+                            <table class="inject">
+                                <thead>
+                                    <tr>
+                                        <th width="120px">Номінал</th>
+                                        <th>Кількість</th>
+                                        <th>Сума</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="cupure">
 
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Сума</th>
-                                    <th id="resCupure" colspan="2"></th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </td>
-                    <td class='coin-parent'>
-                        <table class="inject">
-                            <thead>
-                                <tr>
-                                    <th width="120px">Номінал</th>
-                                    <th>Кількість</th>
-                                    <th>Сума</th>
-                                </tr>
-                            </thead>
-                            <tbody class="coin">
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Сума</th>
+                                        <th id="resCupure" colspan="2"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </td>
+                        <td class='coin-parent'>
+                            <table class="inject">
+                                <thead>
+                                    <tr>
+                                        <th width="120px">Номінал</th>
+                                        <th>Кількість</th>
+                                        <th>Сума</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="coin">
 
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Сума</th>
-                                    <th id="resCoin" colspan="2"></th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </td>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Сума</th>
+                                        <th id="resCoin" colspan="2"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </td>
 
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Результат</th>
-                    <th id="res"></th>
-                </tr>
-            </tfoot>
-        </table>
-        <button class="clean">Зтерти</button>`
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Результат</th>
+                        <th id="res"></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="bodycontent">
+                <button class="clean money">Зтерти</button>
+            </div>
+        </div>`
 
         let dataOld = []
 
