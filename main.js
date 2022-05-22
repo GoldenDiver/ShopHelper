@@ -282,5 +282,5 @@
 
     }
 
-    oldCalc.onclick()
+    newCalc.onclick()
 }) ()
