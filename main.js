@@ -260,12 +260,14 @@
             const tr = document.createElement('tr')
             tr.innerHTML =`
                 <td align="right">${row.cupure} грн.</td>
-                <td><input value='${row.volume}' type='number' min="0" step="1" class='inptable'></input> шт.</td>
+                <td><input value='${row.volume}' type='number' min="0" step="1" class='inptable' onFocus="this.select()"></input> шт.</td>
                 <td width="120px">${row.cupure * row.volume}</td>`
             
+            if (row.volume > 0){tr.classList= 'tog'}else{tr.classList.remove('tog')}
+
             tr.querySelector('input').onchange = function (){
                 row.volume = +tr.querySelector('input').value
-
+                
                 storage.setData('dataOld', dataOld)
                 render()
             }

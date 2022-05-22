@@ -76,8 +76,6 @@ button:active {
 }
 
 
-
-
 table{
     margin-top: 20px;
     border-collapse: collapse; /* Убираем двойные линии между ячейками */
@@ -101,6 +99,10 @@ td, th {
     padding: 2px; /* Поля вокруг содержимого ячеек */
     border: 3px groove #ccc /* Граница между ячейками */
    }
+
+.tog {
+    background: #818181;
+}
 
 
 .delete {
