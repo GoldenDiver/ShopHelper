@@ -38,7 +38,7 @@
             </div>
             <div class="bodycontent">
                 <label>Кількість:</label>
-                <input type="number" value="0" min="0" step="1" class="money vol"></input>
+                <input type="number" value="0" min="0" step="1" class="money vol" onFocus="this.select()"></input>
             </div>
             <div class="bodycontent">
                 <button class="money add">Додати</button>
@@ -135,7 +135,8 @@
             dataNew = [];
             storage.setData('dataNew', dataNew)
             render()
-        }
+        }        
+
     }
 
     const oldCalc = document.querySelector('#old')
