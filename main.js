@@ -11,8 +11,9 @@
     newCalc.onclick = function(){
         main.innerHTML = `
         <div class="body">
-                <label for="money">Номінал:</label>
-                <select name="money" class="money cupure">
+            <div class="bodycontent">
+                <label>Номінал:</label>
+                <select class="money cupure vol">
                     <optgroup label="Купюри">
                         <option value="1000">1000</option>
                         <option value="500">500</option>
@@ -34,9 +35,14 @@
                         <option value="0.1">0.10</option>
                     </optgroup>
                 </select>
+            </div>
+            <div class="bodycontent">
                 <label>Кількість:</label>
                 <input type="number" value="0" min="0" step="1" class="money vol"></input>
+            </div>
+            <div class="bodycontent">
                 <button class="money add">Додати</button>
+            </div>
         </div>
         <table>
             <thead>
@@ -55,7 +61,9 @@
                 </tr>
             </tfoot>
         </table>
-        <button class="clean">Зтерти</button>`
+        <div class="bodycontent">
+            <button class="clean money">Зтерти</button>
+        </div>`
         
         const add = document.querySelector('.add')
         let dataNew = []
