@@ -43,26 +43,27 @@
             <div class="bodycontent">
                 <button class="money add">Додати</button>
             </div>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Номінал</th>
-                    <th>Кількість</th>
-                    <th colspan="2">Сума</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="2">Результат</th>
-                    <th id="res" colspan="2"></th>
-                </tr>
-            </tfoot>
-        </table>
-        <div class="bodycontent">
-            <button class="clean money">Зтерти</button>
+        
+            <table class="body">
+                <thead>
+                    <tr>
+                        <th>Номінал</th>
+                        <th>Кількість</th>
+                        <th colspan="2">Сума</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Результат</th>
+                        <th id="res" colspan="2"></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="bodycontent">
+                <button class="clean money">Зтерти</button>
+            </div>
         </div>`
         
         const add = document.querySelector('.add')
