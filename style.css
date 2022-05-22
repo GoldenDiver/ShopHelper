@@ -50,10 +50,6 @@ body{
     padding-left: 10px;
 }
 
-.vol .cupure {
-    width: 200px;
-}
-
 button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
@@ -74,6 +70,13 @@ button:active {
     justify-content: center;
     align-items: center;
 }
+
+.cupure, .vol{
+    width: 20%
+}
+
+
+
 
 table{
     margin-top: 20px;
